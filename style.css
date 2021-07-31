@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #f26031;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.nav-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #f6d30d;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav>ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul ul{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0 ;
+    display: none;
+    background-color: #f26031;
+}
+
+nav ul ul ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background-color: #f26031;
+}
+
+nav ul ul li{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid white;
+}
+
+nav> ul li:hover> ul{
+    display: block;
+}
+
+nav>ul li:hover{
+    background-color: #ca354b;
+}
+
+.hero{
+    background-image: url(Images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2{
+    color: #f26031;
+    font-size: 4rem;
+}
